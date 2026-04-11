@@ -23,8 +23,8 @@ export default function NavBar() {
                         <IoMdClose   size={30}   className="self-end cursor-pointer text-gray-700"   onClick={toggleMenu} />
                         <nav className="mt-10 flex flex-col gap-4 text-xl font-semibold text-gray-800">
                             <NavLink to="/" className={`text-[30px] font-bold`} onClick={toggleMenu}>Home</NavLink>
-                            <NavLink to="/services" className={`text-[30px] font-bold`} onClick={toggleMenu}>Our Services</NavLink>
-                            <NavLink to="/contact" className={`text-[30px] font-bold`} onClick={toggleMenu}>Contact Us</NavLink>
+                            <NavLink to="/OurServices" className={`text-[30px] font-bold`} onClick={toggleMenu}>Our Services</NavLink>
+                            <NavLink to="/ContactUs" className={`text-[30px] font-bold`} onClick={toggleMenu}>Contact Us</NavLink>
                         </nav>
                     </div>
                 </div>
