@@ -50,8 +50,8 @@
 
    
 3. Start the development server:
-   ```bash
-  npm run dev
+     ```bash
+   npm run dev
 
 
 
