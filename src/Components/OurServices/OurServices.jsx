@@ -10,7 +10,7 @@ export default function Services() {
 
       {/*  VIDEO */}
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-        <source src={`/4KBlueBackGround.mp4`} type="video/mp4" />
+        <source src={`https://res.cloudinary.com/ddpr0dmzh/video/upload/q_auto/f_auto/v1775944112/4KBlueBackGround_mvgiwr.mp4`} type="video/mp4" />
       </video>
 
        {/* GRADIENT GLOW OVERLAY */}
