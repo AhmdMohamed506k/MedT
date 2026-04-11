@@ -41,7 +41,7 @@
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/medt-project.git](https://github.com/your-username/medt-project.git)
+   git clone [https://github.com/AhmdMohamed506k/MedT](https://github.com/AhmdMohamed506k/MedT)
 
 
 2. Install dependencies:
