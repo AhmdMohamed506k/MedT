@@ -110,7 +110,7 @@ export default function TremDetails() {
   return (<>
     <section className={style.TremDetailSection}>
       <video autoPlay muted loop playsInline preload="auto" className={style.video_bg}>
-        <source src={`/public/4KBlueBackGround.mp4`} type="video/mp4" />
+        <source src={`/4KBlueBackGround.mp4`} type="video/mp4" />
       </video>
 
 

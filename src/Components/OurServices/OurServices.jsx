@@ -10,7 +10,7 @@ export default function Services() {
 
       {/*  VIDEO */}
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-        <source src={`/public/4KBlueBackGround.mp4`} type="video/mp4" />
+        <source src={`/4KBlueBackGround.mp4`} type="video/mp4" />
       </video>
 
        {/* GRADIENT GLOW OVERLAY */}
