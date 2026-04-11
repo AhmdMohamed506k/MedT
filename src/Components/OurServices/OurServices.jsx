@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import MainLoader from "../MainLoader/MainLoader";
 
 
 
@@ -7,7 +8,8 @@ import { motion, AnimatePresence } from "framer-motion";
 export default function Services() {
   return (
     <div className="relative min-h-screen text-white overflow-hidden">
-
+      
+            <MainLoader/>
       {/*  VIDEO */}
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
         <source src={`https://res.cloudinary.com/ddpr0dmzh/video/upload/q_auto/f_auto/v1775944112/4KBlueBackGround_mvgiwr.mp4`} type="video/mp4" />

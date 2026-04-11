@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import style from "./ContactUs.module.css"
+import MainLoader from "../MainLoader/MainLoader";
 
 
 export default function ContactUs() {
     return (
         <div className="relative min-h-screen text-gray-800 overflow-hidden">
 
+            <MainLoader />
             {/* VIDEO BACKGROUND */}
             <video
                 autoPlay

@@ -4,6 +4,7 @@ import style from "./Home.module.css";
 import SplitText from "./SplitText/SplitText.jsx";
 import { CgArrowTopRightO } from "react-icons/cg";
 import HomeSearch from '../HomeSearch/HomeSearch.jsx';
+import MainLoader from '../MainLoader/MainLoader.jsx';
 
 export default function Home() {
   const [isExiting, setIsExiting] = useState(false); 
@@ -29,7 +30,17 @@ export default function Home() {
   };
 
   return (
+    
+
+
+
+
+
     <section className={style.HomeSection}>
+
+
+      <MainLoader/>
+      
       <video autoPlay muted loop playsInline preload="auto" className={style.video_bg}>
         <source src="https://res.cloudinary.com/ddpr0dmzh/video/upload/q_auto/f_auto/v1775944112/4KBlueBackGround_mvgiwr.mp4" type="video/mp4" />
       </video>
