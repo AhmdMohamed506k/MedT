@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import BG from "../../assets/4KBlueBackGround.mp4";
+
 
 
 
@@ -10,7 +10,7 @@ export default function Services() {
 
       {/*  VIDEO */}
       <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
-        <source src={BG} type="video/mp4" />
+        <source src={`/public/4KBlueBackGround.mp4`} type="video/mp4" />
       </video>
 
        {/* GRADIENT GLOW OVERLAY */}

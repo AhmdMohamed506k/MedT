@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import style from "./TremDetails.module.css"
-import BG from '../../assets/4KBlueBackGround.mp4';
+
 import { useParams } from 'react-router-dom';
 import PNG from "../../../public/TalkPng.png"
 import ProgressLine from "../ProgressLine/ProgressLine.jsx"
 import TextType from "../Home/TextType/TextType.jsx"
 import axios from 'axios';
-import { OrbitProgress, Riple } from 'react-loading-indicators';
+import {  Riple } from 'react-loading-indicators';
 
 
 
@@ -110,7 +110,7 @@ export default function TremDetails() {
   return (<>
     <section className={style.TremDetailSection}>
       <video autoPlay muted loop playsInline preload="auto" className={style.video_bg}>
-        <source src={BG} type="video/mp4" />
+        <source src={`/public/4KBlueBackGround.mp4`} type="video/mp4" />
       </video>
 
 

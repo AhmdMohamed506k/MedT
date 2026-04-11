@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import BG from '../../assets/4KBlueBackGround.mp4';
+
 import style from "./Home.module.css";
 import SplitText from "./SplitText/SplitText.jsx";
 import { CgArrowTopRightO } from "react-icons/cg";
@@ -18,9 +18,6 @@ export default function Home() {
       setShowSearch(true);
     }
   }, []);
-
-
-
   const handleStart = () => {
     setIsExiting(true); 
 
@@ -34,7 +31,7 @@ export default function Home() {
   return (
     <section className={style.HomeSection}>
       <video autoPlay muted loop playsInline preload="auto" className={style.video_bg}>
-        <source src={BG} type="video/mp4" />
+        <source src="/public/4KBlueBackGround.mp4" type="video/mp4" />
       </video>
 
       <div className={style.contant}>

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import BG from '../../assets/4KBlueBackGround.mp4';
 import style from "./ContactUs.module.css"
 
 
@@ -16,7 +15,7 @@ export default function ContactUs() {
                 playsInline
                 className="absolute inset-0 w-full h-full object-cover"
             >
-                <source src={BG} type="video/mp4" />
+                <source src={`/public/4KBlueBackGround.mp4`} type="video/mp4" />
             </video>
 
             {/* OVERLAY */}
