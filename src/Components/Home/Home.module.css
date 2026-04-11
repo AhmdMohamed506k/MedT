@@ -1,0 +1,65 @@
+.HomeSection {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.video_bg {
+  position: absolute;
+  width: 100%;
+  z-index: 14;
+
+}
+
+.contant {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 15;
+  color: white;
+}
+
+.HomeTitle {
+  font-size: clamp(2.3rem, 6vw, 4rem);
+  transition: all 1s;
+  font-weight: bold;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+.HomeParagraph1 {
+  font-size: clamp(0.85rem, 3.4vw, 1.5rem);
+  font-weight: 500;
+  transition: all 1s;
+  margin-top: 1rem;
+}
+.HomeParagraph2 {
+  font-size: clamp(0.85rem, 2vw, 1.6rem);
+  font-weight: 500;
+  transition: all 1s;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+@media screen and (max-width: 350px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media (max-width: 1024px) {
+  .video_bg {
+  
+    height: 100%;
+  
+   
+  }
+}

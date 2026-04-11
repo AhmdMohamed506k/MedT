@@ -1,0 +1,124 @@
+
+.PhoneIcon {
+  display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* small Phones */
+@media screen and (max-width: 350px) {
+  .NavContainer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blanchedalmond;
+    background: #ffffff0d;
+    --bg-currentcolor: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 100px;
+    width: 60% !important;
+    height: 65px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 19px;
+  }
+}
+
+
+/* Tables */
+@media screen and (max-width: 880px) {
+ .NavContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blanchedalmond;
+  background: #ffffff0d;
+  --bg-currentcolor: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  width: 90% !important;
+  height: 65px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 19px;
+}
+}
+
+/* Desktops */
+@media (max-width: 1024px) {
+ .NavContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blanchedalmond;
+  background: #ffffff0d;
+  --bg-currentcolor: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  width: 64%;
+  height: 65px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 19px;
+}
+}
+@media (min-width: 1024px) {
+ .NavContainer {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: blanchedalmond;
+  background: #ffffff0d;
+  --bg-currentcolor: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  width: 74%;
+  height: 65px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 19px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 880px) {
+  #PCList {
+    display: none;
+  }
+  .PhoneIcon {
+    display: flex;
+  }
+}

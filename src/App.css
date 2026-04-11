@@ -1,0 +1,13 @@
+
+
+
+video {
+ 
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  object-fit: cover;
+  height: 100%;
+}
+.active{
+  color: rgb(0, 102, 255);
+}

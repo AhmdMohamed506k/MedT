@@ -1,0 +1,166 @@
+.TremDetailSection {
+  width: 100%;
+  height: 135vh;
+
+  position: relative;
+  overflow: hidden;
+}
+.video_bg {
+  position: absolute;
+  width: 100%;
+  z-index: 14;
+}
+.contant {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 15;
+  color: white;
+}
+.contant .container span {
+  font-size: clamp(0.8rem, 3vw, 1rem);
+}
+.container .FirstBox h2 {
+  font-size: clamp(1.2rem, 3.1vw, 1.9rem);
+}
+.container .FirstBox p {
+  font-size: clamp(1.2rem, 3.1vw, 1.9rem);
+}
+
+.speakerIcon {
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+  min-width: 3%;
+  height: 2%;
+}
+
+.speakerIcon:hover {
+  transform: scale(1.2); 
+  opacity: 0.8;
+}
+
+.speakerIcon:active {
+  transform: scale(0.9); 
+}
+
+
+
+
+
+
+
+@media (max-width: 350px) {
+  .TremDetailSection {
+    height: 200vh;
+  }
+  .container .FirstBox h2 {
+    font-size: clamp(0.9rem, 3.1vw, 1.9rem);
+  }
+  .container .FirstBox p {
+    font-size: clamp(0.9rem, 3.1vw, 1.9rem);
+  }
+    .speakerIcon{
+    margin-top: 2px;
+  }
+  .contant {
+    top: 200px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .TremDetailSection {
+    height: 110vh;
+  }
+  .contant {
+    top: -90px;
+  }
+  .FirstBox {
+    padding-left: 48px;
+  }
+  .speakerIcon{
+    margin-top: 8px;
+  }
+  .secondBox {
+    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .secondBox .box {
+    width: 42%;
+  }
+  .ThirdBox .box {
+    width: 90%;
+    margin: auto;
+  }
+  .LastBox .box {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1999px) {
+  .TremDetailSection {
+    height: 130vh;
+  }
+  .contant {
+    top: 50px;
+  }
+  .FirstBox {
+    padding-left: 30px;
+  }
+    .speakerIcon{
+    margin-top: 8px;
+  }
+  .secondBox {
+    gap: 50px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .secondBox .box {
+    width: 45%;
+  }
+  .ThirdBox .box {
+    width: 95%;
+    margin: auto;
+  }
+  .LastBox .box {
+    width: 95%;
+    margin: auto;
+  }
+}
+@media (min-width: 1200px) {
+  .TremDetailSection {
+    height: 130vh;
+  }
+  .contant {
+    top: 50px;
+  }
+  .FirstBox {
+    padding-left: 30px;
+    max-width: 81%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .secondBox {
+    gap: 40px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .secondBox .box {
+    width: 37%;
+  }
+  .ThirdBox .box {
+    width: 77%;
+    margin: auto;
+  }
+  .LastBox .box {
+    width: 77%;
+    margin: auto;
+  }
+}

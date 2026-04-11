@@ -1,0 +1,5 @@
+.video_bg {
+  position: absolute;
+  width: 100%;
+  z-index: 14;
+}
