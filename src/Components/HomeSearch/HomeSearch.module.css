@@ -127,6 +127,25 @@
   color: #2563eb;
   animation: spin 1s linear infinite;
 }
+.arrowIcon{
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  font-size: 1.5rem;
+  color: #4a4b4c;
+  transition: all 500ms;
+
+}
+
+.arrowIconDown{
+  position: absolute;
+  right: 25px;
+  top: 22px;
+  font-size: 1.5rem;
+  color: #4a4b4c;
+  transition: all 500ms;
+  transform: rotate(-90deg);
+}
 
 @keyframes spin {
   from { transform: rotate(0deg); }

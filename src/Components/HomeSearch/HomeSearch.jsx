@@ -5,6 +5,8 @@ import style from "./HomeSearch.module.css";
 import { IoSearchOutline } from 'react-icons/io5';
 import { LuLoaderCircle } from "react-icons/lu";
 import { Link } from 'react-router-dom';
+import { IoIosArrowDown } from "react-icons/io";
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md";
 
 export default function HomeSearch({ setShowSearch, setIsExiting }) {
   const [isSeachExiting, setIsSeachExiting] = useState(false);
@@ -87,7 +89,9 @@ export default function HomeSearch({ setShowSearch, setIsExiting }) {
           
           <input type="text"  placeholder="Search for medical terms..."  className={`${style.mainSearchInput} ${filteredSuggestions.length > 0 ? style.inputWithFetchedTrems : ""}`}  value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
 
-          {isLoading && <LuLoaderCircle className={style.loaderIcon} />}
+          <MdOutlineKeyboardArrowLeft   className={!searchTerm ? `${style.arrowIcon}` : `${style.arrowIconDown}`}  />
+            
+
 
           {!isLoading && filteredSuggestions.length > 0 && (
             <ul className={style.FetchedTremsBox}>

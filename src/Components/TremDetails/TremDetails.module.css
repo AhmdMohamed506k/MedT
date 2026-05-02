@@ -34,11 +34,14 @@
   font-size: clamp(0.9rem, 3.1vw, 1.9rem);
 }
 .container .FirstBox .iconContainer p{
- font-size: clamp(0.9rem, 3.1vw, 1.9rem) !important;
+  margin-top: auto;
+  margin-bottom: auto;
+ font-size: clamp(0.8rem, 3.1vw, 1.2rem) !important;
 }
 .urlLink{
-   font-size: clamp(0.7rem, 3.1vw, 1.9rem) !important;
+   font-size: clamp(0.7rem, 3.1vw, 1.0rem) !important;
 }
+
 
 
 .speakerIcon {
@@ -142,6 +145,8 @@
     width: 95%;
     margin: auto;
   }
+  
+ 
 }
 @media (min-width: 1200px) {
   .TremDetailSection {
@@ -172,4 +177,6 @@
     width: 77%;
     margin: auto;
   }
+   
+ 
 }
