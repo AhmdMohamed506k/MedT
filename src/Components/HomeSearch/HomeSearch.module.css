@@ -50,7 +50,7 @@
 
 .searchInfoText span {
   display: block;
-  font-size: clamp(0.95rem, 3.4vw, 1.4rem);
+  font-size: clamp(0.88rem, 3.4vw, 1.4rem);
   margin-bottom: 10px;
   font-weight: 600;
 }
@@ -61,7 +61,7 @@
 }
 .searchBarWrapper {
   position: relative;
-  width: 100%;
+  width: 92%;
   display: flex;
   flex-direction: column; 
   align-items: center;
@@ -137,3 +137,5 @@
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+

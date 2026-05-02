@@ -28,13 +28,16 @@
   font-size: clamp(0.8rem, 3vw, 1rem);
 }
 .container .FirstBox .termContainer h2 {
-  font-size: clamp(0.9rem, 3.1vw, 1.9rem);
+  font-size: clamp(0.8rem, 3.1vw, 1.9rem);
 }
 .container .FirstBox .termContainer p {
   font-size: clamp(0.9rem, 3.1vw, 1.9rem);
 }
 .container .FirstBox .iconContainer p{
- font-size: clamp(0.6rem, 3.1vw, 1.9rem) !important;
+ font-size: clamp(0.9rem, 3.1vw, 1.9rem) !important;
+}
+.urlLink{
+   font-size: clamp(0.7rem, 3.1vw, 1.9rem) !important;
 }
 
 

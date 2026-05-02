@@ -85,14 +85,7 @@ export default function HomeSearch({ setShowSearch, setIsExiting }) {
         <div className={style.searchBarWrapper}>
           <IoSearchOutline className={style.searchIcon} />
           
-          <input 
-            type="text" 
-            placeholder="Search for medical terms..." 
-            className={`${style.mainSearchInput} ${filteredSuggestions.length > 0 ? style.inputWithFetchedTrems : ""}`} 
-          
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-          />
+          <input type="text"  placeholder="Search for medical terms..."  className={`${style.mainSearchInput} ${filteredSuggestions.length > 0 ? style.inputWithFetchedTrems : ""}`}  value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
 
           {isLoading && <LuLoaderCircle className={style.loaderIcon} />}
 
@@ -100,8 +93,9 @@ export default function HomeSearch({ setShowSearch, setIsExiting }) {
             <ul className={style.FetchedTremsBox}>
               {filteredSuggestions.map((item) => (
                 <li key={item._id} className={style.suggestionItem} onClick={() => { setSearchTerm(item.EnglishTerm);setFilteredSuggestions([]); }} >
-                 <IoSearchOutline className="me-3 opacity-50" />
-                <Link className=' w-full' to={`${item.Specialization}/${item._id}`}>      
+                <IoSearchOutline className="me-3 opacity-50" />
+
+                <Link className=' w-full' to={`${item?.Specialization}/${item?._id}`}>      
                  
                   <div className="flex justify-between w-full">
                     <span>{item.EnglishTerm} / {item.ArabicTerm}</span>

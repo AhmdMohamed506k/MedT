@@ -130,12 +130,14 @@ export default function TremDetails() {
 
 
             <div className={`${style.FirstBox} flex flex-col gap-3 mt-50 pb-5 animate__animated  animate__fadeInUp`}>
-              <div className={`flex gap-3 ${style.termContainer}`}>
-                <h2>{TremData.EnglishTerm}</h2>
+              <div className={`flex gap-3 ${style.termContainer} `}>
+               <div className=' w-100'> <h2>{TremData.EnglishTerm}</h2></div>
                 <p>-</p>
-                <p>{TremData.ArabicTerm}</p>
+                 <div className=' w-100'>
+                    <p>{TremData.ArabicTerm}</p>
+                 </div>
               </div>
-              <div className={`flex gap-3 text-[#747a85] ${style.iconContainer}`}>
+              <div className={`flex justify-center gap-3 text-[#747a85] ${style.iconContainer}`}>
                 <img src={PNG} className={`${style.speakerIcon} w-5 cursor-pointer`} alt="Speak" onClick={() => handleSpeak(TremData.EnglishTerm)}/>
                 <p className={`text-[#757b86]  font-semibold `}>{TremData.Pronnucation}</p>
               </div>
@@ -215,7 +217,7 @@ export default function TremDetails() {
                     variableSpeedMax={120}
                     cursorBlinkDuration={0.5}
                   />  :  
-                    <p onClick={()=>openUrl(TremData?.details?.Definition3dImageUrl)}><Link   className=' hover:text-blue-400 hover:text-decoration-underline  transition-all animate__animated animate__fadeIn animate__delay-1s'>{TremData?.details?.Definition3dImageUrl}</Link></p>
+                    <p className={`${style.urlLink}`} onClick={()=>openUrl(TremData?.details?.Definition3dImageUrl)}><Link   className=' hover:text-blue-400 hover:text-decoration-underline  transition-all animate__animated animate__fadeIn animate__delay-1s '>{TremData?.details?.Definition3dImageUrl}</Link></p>
                   
                   }
 
