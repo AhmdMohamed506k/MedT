@@ -6,7 +6,7 @@ import PNG from "../../../public/TalkPng.png"
 import ProgressLine from "../ProgressLine/ProgressLine.jsx"
 import TextType from "../Home/TextType/TextType.jsx"
 import axios from 'axios';
-import {  Riple } from 'react-loading-indicators';
+import { Riple } from 'react-loading-indicators';
 
 
 
@@ -57,7 +57,7 @@ export default function TremDetails() {
 
 
 
-   
+
 
 
 
@@ -90,22 +90,22 @@ export default function TremDetails() {
 
 
     getTremDetails()
-   
+
 
   }, [id])
 
 
 
-  function openUrl(url){
+  function openUrl(url) {
     console.log(url);
 
-    window.open(url,"_blank")
-    
+    window.open(url, "_blank")
+
   }
 
 
 
-   
+
 
 
 
@@ -131,14 +131,14 @@ export default function TremDetails() {
 
             <div className={`${style.FirstBox} flex flex-col gap-3 mt-50 pb-5 animate__animated  animate__fadeInUp`}>
               <div className={`flex gap-3 ${style.termContainer} `}>
-               <div className=' w-100'> <h2>{TremData.EnglishTerm}</h2></div>
+                <div className=' w-100'> <h2>{TremData.EnglishTerm}</h2></div>
                 <p>-</p>
-                 <div className=' w-100'>
-                    <p>{TremData.ArabicTerm}</p>
-                 </div>
+                <div className=' w-100'>
+                  <p>{TremData.ArabicTerm}</p>
+                </div>
               </div>
               <div className={`flex justify-center gap-3 text-[#747a85] ${style.iconContainer}`}>
-                <img src={PNG} className={`${style.speakerIcon} w-5 cursor-pointer`} alt="Speak" onClick={() => handleSpeak(TremData.EnglishTerm)}/>
+                <img src={PNG} className={`${style.speakerIcon} w-5 cursor-pointer`} alt="Speak" onClick={() => handleSpeak(TremData.EnglishTerm)} />
                 <p className={`text-[#757b86]  font-semibold `}>{TremData.Pronnucation}</p>
               </div>
             </div>
@@ -201,11 +201,11 @@ export default function TremDetails() {
               <div className={`${style.box}  text-start`}>
                 <p className='ms-2 mb-1'>3D Image (url)</p>
                 <div className=' bg-white text-center rounded-3xl text-[#747a85] border-2 border-[#747a8507] p-2'>
-                  
 
 
-                  {TremData?.details?.Definition3dImageUrl == "" ?    <TextType
-                    text={ ["Sorry url is not available", "Please try again later"]}
+
+                  {TremData?.details?.Definition3dImageUrl == "" ? <TextType
+                    text={["Sorry url is not available", "Please try again later"]}
                     typingSpeed={75}
                     pauseDuration={1500}
                     showCursor
@@ -216,12 +216,19 @@ export default function TremDetails() {
                     variableSpeedMin={60}
                     variableSpeedMax={120}
                     cursorBlinkDuration={0.5}
-                  />  :  
-                    <p className={`${style.urlLink}`} onClick={()=>openUrl(TremData?.details?.Definition3dImageUrl)}><Link   className=' hover:text-blue-400 hover:text-decoration-underline  transition-all animate__animated animate__fadeIn animate__delay-1s '>{TremData?.details?.Definition3dImageUrl}</Link></p>
-                  
+                  /> :
+                    <p
+                      className={`${style.urlLink} break-all`} 
+                      onClick={() => openUrl(TremData?.details?.Definition3dImageUrl)}
+                    >
+                      <Link className='hover:text-blue-400 hover:text-decoration-underline transition-all animate__animated animate__fadeIn animate__delay-1s'>
+                        {TremData?.details?.Definition3dImageUrl}
+                      </Link>
+                    </p>
+
                   }
 
-                
+
 
 
                 </div>
@@ -241,7 +248,7 @@ export default function TremDetails() {
 
                   visualParts={[
                     {
-                      percentage: AI_AccuracyCount == null || AI_AccuracyCount == "" ? "0" + "%" : AI_AccuracyCount + "%"  ,
+                      percentage: AI_AccuracyCount == null || AI_AccuracyCount == "" ? "0" + "%" : AI_AccuracyCount + "%",
                       color: "white"
                     }
                   ]}
