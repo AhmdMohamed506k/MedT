@@ -56,7 +56,7 @@ export default function HomeSearch({ setShowSearch, setIsExiting }) {
         item.EnglishTerm.toLowerCase().includes(searchTerm.toLowerCase()) ||
         item.ArabicTerm.includes(searchTerm) ||
         item.Specialization.toLowerCase().includes(searchTerm.toLowerCase())
-      ).slice(0, 10); 
+      ).slice(1, 10); 
       setFilteredSuggestions(filtered);
     } else {
       setFilteredSuggestions([]);

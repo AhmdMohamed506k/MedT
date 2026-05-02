@@ -17,7 +17,7 @@ export default function TremDetails() {
 
 
 
-  const [TremData, SetTremData] = useState(null)
+  const [TremData, SetTremData] = useState()
   const [AI_AccuracyCount, SetAI_AccuracyCount] = useState(null)
 
   const { id } = useParams();
@@ -69,8 +69,8 @@ export default function TremDetails() {
       try {
 
         const TremDetails = await axios.get(`https://medt-api.vercel.app/MedTApi/api/v1/GetTerm/${id}`)
-        SetTremData(TremDetails.data.SpecificTerm)
-        SetAI_AccuracyCount(TremDetails.data.SpecificTerm.details.AI_Accuracy)
+        SetTremData(TremDetails?.data?.SpecificTerm)
+        SetAI_AccuracyCount(TremDetails?.data?.SpecificTerm?.details?.AI_Accuracy)
       } catch (err) {
 
         console.log("===>", err);
@@ -97,7 +97,7 @@ export default function TremDetails() {
 
 
   function openUrl(url) {
-    console.log(url);
+
 
     window.open(url, "_blank")
 
@@ -132,13 +132,13 @@ export default function TremDetails() {
             <div className={`${style.FirstBox} flex flex-col gap-3 mt-50 pb-5 animate__animated  animate__fadeInUp`}>
               <div className={`flex gap-3 ${style.termContainer} `}>
              
-                <h2>{TremData.EnglishTerm}</h2>
+                <h2>{TremData?.EnglishTerm}</h2>
                 <p>-</p>
-                <p>{TremData.ArabicTerm}</p>
+                <p>{TremData?.ArabicTerm}</p>
               </div>
               <div className={`flex  gap-3 text-[#747a85] ${style.iconContainer} `}>
                 <img src={PNG} className={`${style.speakerIcon} w-5 cursor-pointer`} alt="Speak" onClick={() => handleSpeak(TremData.EnglishTerm)} />
-                <p className={`text-[#757b86]  font-semibold `}>{TremData.Pronnucation}</p>
+                <p className={`text-[#757b86]  font-semibold `}>{TremData?.Pronnucation}</p>
               </div>
             </div>
 
@@ -150,7 +150,7 @@ export default function TremDetails() {
               <div className={`${style.box}  text-start`}>
                 <p className='ms-2 mb-1'>Definition in English</p>
                 <div className=' bg-white text-center rounded-[11px] text-[#747a85] border-2 border-[#747a851a] p-2'>
-                  <span>{TremData.details.EnglishDefinition}</span>
+                  <span>{TremData?.details?.EnglishDefinition}</span>
 
 
                 </div>
@@ -160,7 +160,7 @@ export default function TremDetails() {
               <div className={`${style.box}  text-start`}>
                 <p className='ms-2 mb-1'>Definition in Arabic</p>
                 <div className=' bg-white text-center rounded-[11px] text-[#747a85] border-2 border-[#747a851a] p-2'>
-                  <span>{TremData.details.ArabicDefinition}</span>
+                  <span>{TremData?.details?.ArabicDefinition}</span>
 
 
                 </div>
@@ -172,7 +172,7 @@ export default function TremDetails() {
               <div className={`${style.box}  text-start`}>
                 <p className='ms-2 mb-1'>AI Explanation</p>
                 <div className=' bg-white text-center rounded-[11px] text-[#747a85] border-2 border-[#747a851a] p-2'>
-                  <span>{TremData.details.AI_Explanation}</span>
+                  <span>{TremData?.details?.AI_Explanation}</span>
 
 
                 </div>
@@ -216,8 +216,7 @@ export default function TremDetails() {
                     variableSpeedMax={120}
                     cursorBlinkDuration={0.5}
                   /> :
-                    <p className={`${style.urlLink} break-all`} onClick={() => openUrl(TremData?.details?.Definition3dImageUrl)}
- >
+                    <p className={`${style.urlLink} break-all`} onClick={() => openUrl(TremData?.details?.Definition3dImageUrl)}>
                       <Link className='hover:text-blue-600   hover:text-decoration-underline transition-all animate__animated animate__fadeIn animate__delay-1s'>
                         {TremData?.details?.Definition3dImageUrl}
                       </Link>
