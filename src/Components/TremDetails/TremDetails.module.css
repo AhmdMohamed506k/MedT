@@ -1,6 +1,6 @@
 .TremDetailSection {
   width: 100%;
-  height: 135vh;
+  height: 145vh;
 
   position: relative;
   overflow: hidden;
@@ -27,17 +27,19 @@
 .contant .container span {
   font-size: clamp(0.8rem, 3vw, 1rem);
 }
-.container .FirstBox h2 {
-  font-size: clamp(1.2rem, 3.1vw, 1.9rem);
+.container .FirstBox .termContainer h2 {
+  font-size: clamp(0.9rem, 3.1vw, 1.9rem);
 }
-.container .FirstBox p {
-  font-size: clamp(1.2rem, 3.1vw, 1.9rem);
+.container .FirstBox .termContainer p {
+  font-size: clamp(0.9rem, 3.1vw, 1.9rem);
+}
+.container .FirstBox .iconContainer p{
+ font-size: clamp(0.6rem, 3.1vw, 1.9rem) !important;
 }
 
+
 .speakerIcon {
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease;
+  transition:transform 0.2s ease, opacity 0.2s ease;
   min-width: 3%;
   height: 2%;
 }
@@ -62,16 +64,17 @@
     height: 200vh;
   }
   .container .FirstBox h2 {
-    font-size: clamp(0.9rem, 3.1vw, 1.9rem);
+    font-size: clamp(0.7rem, 3.1vw, 1.9rem);
+    margin-bottom: 1rem;
   }
   .container .FirstBox p {
-    font-size: clamp(0.9rem, 3.1vw, 1.9rem);
+    font-size: clamp(0.7rem, 3.1vw, 1.9rem);
   }
-    .speakerIcon{
+  .speakerIcon{
     margin-top: 2px;
   }
   .contant {
-    top: 200px !important;
+    top: 17rem !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
@@ -83,11 +86,13 @@
   }
   .FirstBox {
     padding-left: 48px;
+
   }
   .speakerIcon{
     margin-top: 8px;
   }
   .secondBox {
+    
     gap: 50px;
     flex-direction: row;
     justify-content: center;
@@ -110,6 +115,7 @@
   }
   .contant {
     top: 50px;
+   
   }
   .FirstBox {
     padding-left: 30px;
