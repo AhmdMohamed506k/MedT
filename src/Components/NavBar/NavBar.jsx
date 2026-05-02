@@ -23,8 +23,6 @@ export default function NavBar() {
                         <IoMdClose   size={30}   className="self-end cursor-pointer text-gray-700"   onClick={toggleMenu} />
                         <nav className="mt-10 flex flex-col gap-4 text-xl font-semibold text-gray-800">
                             <NavLink to="/" className={`text-[30px] font-bold`} onClick={toggleMenu}>Home</NavLink>
-                            <NavLink to="/OurServices" className={`text-[30px] font-bold`} onClick={toggleMenu}>Our Services</NavLink>
-                            <NavLink to="/ContactUs" className={`text-[30px] font-bold`} onClick={toggleMenu}>Contact Us</NavLink>
                         </nav>
                     </div>
                 </div>
@@ -49,9 +47,8 @@ export default function NavBar() {
 
                 {/* PC List - Hidden on mobile, shown on md screens */}
                 <ul className="hidden md:flex font-medium space-x-8 pe-4">
-                    <li><NavLink to="/" className="hover:text-cyan-400 ">Home</NavLink></li>
-                    <li><NavLink to="/OurServices" className="hover:text-cyan-400">Our Services</NavLink></li>
-                    <li><NavLink to="/ContactUs" className="hover:text-cyan-400">Contact Us</NavLink></li>
+                   
+             
                 </ul>
             </div>
         </header>
